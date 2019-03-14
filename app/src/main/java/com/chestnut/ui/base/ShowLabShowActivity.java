@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.chestnut.ui.R;
 import com.chestnut.ui.contract.BaseShowActivity;
 import com.chestnut.ui.widget.Loading.LeafLoadingActivity;
+import com.chestnut.ui.widget.asyncTask.TestAsyncTaskActivity;
 import com.chestnut.ui.widget.carSign.CarAdvancedSignView;
 import com.chestnut.ui.widget.carSign.CarSignView;
 import com.chestnut.ui.widget.carView.CarMarketView;
@@ -63,5 +64,7 @@ public class ShowLabShowActivity extends BaseShowActivity {
                         .setLandscape(true)
                         .setBaseViewClass(CarAdvancedSignView.class)
                         .newInstance()));
+        addTvViewToLayout("Source-AsyncTask",
+                v -> startActivity(new Intent(this, TestAsyncTaskActivity.class)));
     }
 }
