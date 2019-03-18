@@ -24,7 +24,8 @@
         <activity
             android:name=".widget.voiceAnim.VoiceAnimLottieActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".widget.asyncTask.TestAsyncTaskActivity"></activity>
+        <activity android:name=".widget.asyncTask.TestAsyncTaskActivity" />
+        <activity android:name=".widget.handlerThread.HandlerThreadActivity"></activity>
     </application>
 
 </manifest>

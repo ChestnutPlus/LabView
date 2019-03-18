@@ -10,6 +10,7 @@ import com.chestnut.ui.widget.asyncTask.TestAsyncTaskActivity;
 import com.chestnut.ui.widget.carSign.CarAdvancedSignView;
 import com.chestnut.ui.widget.carSign.CarSignView;
 import com.chestnut.ui.widget.carView.CarMarketView;
+import com.chestnut.ui.widget.handlerThread.HandlerThreadActivity;
 import com.chestnut.ui.widget.voiceAnim.VoiceAnimLottieActivity;
 import com.chestnut.ui.widget.voiceAnim.VoiceAnimView;
 
@@ -66,5 +67,7 @@ public class ShowLabShowActivity extends BaseShowActivity {
                         .newInstance()));
         addTvViewToLayout("Source-AsyncTask",
                 v -> startActivity(new Intent(this, TestAsyncTaskActivity.class)));
+        addTvViewToLayout("Source-HandlerThread",
+                v -> startActivity(new Intent(this, HandlerThreadActivity.class)));
     }
 }
