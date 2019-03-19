@@ -24,8 +24,12 @@
         <activity
             android:name=".widget.voiceAnim.VoiceAnimLottieActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".widget.asyncTask.TestAsyncTaskActivity" />
-        <activity android:name=".widget.handlerThread.HandlerThreadActivity"></activity>
+
+        <service android:name="com.chestnut.source.intentService.TestIntentService" />
+
+        <activity android:name="com.chestnut.source.intentService.TestIntentServiceActivity" />
+        <activity android:name="com.chestnut.source.localBroadcastManager.TestLocalBroadcastManagerActivity" />
+        <activity android:name="com.chestnut.source.handler.TestHandlerActivity"></activity>
     </application>
 
 </manifest>

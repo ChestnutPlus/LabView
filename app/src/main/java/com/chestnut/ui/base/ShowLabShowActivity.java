@@ -3,14 +3,13 @@ package com.chestnut.ui.base;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.chestnut.source.intentService.TestIntentServiceActivity;
 import com.chestnut.ui.R;
 import com.chestnut.ui.contract.BaseShowActivity;
 import com.chestnut.ui.widget.Loading.LeafLoadingActivity;
-import com.chestnut.ui.widget.asyncTask.TestAsyncTaskActivity;
 import com.chestnut.ui.widget.carSign.CarAdvancedSignView;
 import com.chestnut.ui.widget.carSign.CarSignView;
 import com.chestnut.ui.widget.carView.CarMarketView;
-import com.chestnut.ui.widget.handlerThread.HandlerThreadActivity;
 import com.chestnut.ui.widget.voiceAnim.VoiceAnimLottieActivity;
 import com.chestnut.ui.widget.voiceAnim.VoiceAnimView;
 
@@ -65,9 +64,8 @@ public class ShowLabShowActivity extends BaseShowActivity {
                         .setLandscape(true)
                         .setBaseViewClass(CarAdvancedSignView.class)
                         .newInstance()));
-        addTvViewToLayout("Source-AsyncTask",
-                v -> startActivity(new Intent(this, TestAsyncTaskActivity.class)));
-        addTvViewToLayout("Source-HandlerThread",
-                v -> startActivity(new Intent(this, HandlerThreadActivity.class)));
+        addTvViewToLayout("IntentService", v -> {
+            startActivity(new Intent(this, TestIntentServiceActivity.class));
+        });
     }
 }
