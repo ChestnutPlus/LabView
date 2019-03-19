@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#eee"
-    tools:context="com.chestnut.ui.widget.asyncTask.TestAsyncTaskActivity">
+    tools:context="com.chestnut.source.asyncTask.TestAsyncTaskActivity">
 
     <ProgressBar
         android:id="@+id/progress"

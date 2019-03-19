@@ -1,4 +1,4 @@
-package com.chestnut.ui.widget.handlerThread;
+package com.chestnut.source.handlerThread;
 
 import android.os.Bundle;
 import android.os.Handler;

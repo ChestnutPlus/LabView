@@ -30,6 +30,8 @@
         <activity android:name="com.chestnut.source.intentService.TestIntentServiceActivity" />
         <activity android:name="com.chestnut.source.localBroadcastManager.TestLocalBroadcastManagerActivity" />
         <activity android:name="com.chestnut.source.handler.TestHandlerActivity"></activity>
+        <activity android:name="com.chestnut.source.asyncTask.TestAsyncTaskActivity"/>
+        <activity android:name="com.chestnut.source.handlerThread.HandlerThreadActivity"/>
     </application>
 
 </manifest>

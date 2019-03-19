@@ -3,6 +3,8 @@ package com.chestnut.ui.base;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.chestnut.source.asyncTask.TestAsyncTaskActivity;
+import com.chestnut.source.handlerThread.HandlerThreadActivity;
 import com.chestnut.source.intentService.TestIntentServiceActivity;
 import com.chestnut.ui.R;
 import com.chestnut.ui.contract.BaseShowActivity;
@@ -66,6 +68,12 @@ public class ShowLabShowActivity extends BaseShowActivity {
                         .newInstance()));
         addTvViewToLayout("IntentService", v -> {
             startActivity(new Intent(this, TestIntentServiceActivity.class));
+        });
+        addTvViewToLayout("AsyncTask", v -> {
+            startActivity(new Intent(this, TestAsyncTaskActivity.class));
+        });
+        addTvViewToLayout("HandlerThread", v -> {
+            startActivity(new Intent(this, HandlerThreadActivity.class));
         });
     }
 }

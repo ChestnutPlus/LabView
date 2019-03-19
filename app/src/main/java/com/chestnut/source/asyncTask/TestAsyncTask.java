@@ -1,4 +1,4 @@
-package com.chestnut.ui.widget.asyncTask;
+package com.chestnut.source.asyncTask;
 
 import android.os.AsyncTask;
 
