@@ -32,7 +32,11 @@
         <activity android:name="com.chestnut.source.handler.TestHandlerActivity" />
         <activity android:name="com.chestnut.source.asyncTask.TestAsyncTaskActivity" />
         <activity android:name="com.chestnut.source.handlerThread.HandlerThreadActivity" />
-        <activity android:name="com.chestnut.codeSnippet.TextViewActivity"></activity>
+        <activity
+            android:name="com.chestnut.codeSnippet.TextViewActivity"
+            android:screenOrientation="user" />
+        <activity android:name="com.chestnut.codeSnippet.ViewStubActivity" />
+        <activity android:name="com.chestnut.codeSnippet.RatingBarActivity"></activity>
     </application>
 
 </manifest>

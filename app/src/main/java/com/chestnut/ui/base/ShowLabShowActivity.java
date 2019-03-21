@@ -3,7 +3,9 @@ package com.chestnut.ui.base;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.chestnut.codeSnippet.RatingBarActivity;
 import com.chestnut.codeSnippet.TextViewActivity;
+import com.chestnut.codeSnippet.ViewStubActivity;
 import com.chestnut.source.asyncTask.TestAsyncTaskActivity;
 import com.chestnut.source.handlerThread.HandlerThreadActivity;
 import com.chestnut.source.intentService.TestIntentServiceActivity;
@@ -78,6 +80,12 @@ public class ShowLabShowActivity extends BaseShowActivity {
         });
         addTvViewToLayout("TextView", v -> {
             startActivity(new Intent(this, TextViewActivity.class));
+        });
+        addTvViewToLayout("ViewStub", v -> {
+            startActivity(new Intent(this, ViewStubActivity.class));
+        });
+        addTvViewToLayout("RatingBar", v -> {
+            startActivity(new Intent(this, RatingBarActivity.class));
         });
     }
 }
