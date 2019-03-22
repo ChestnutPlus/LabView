@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewStub;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.chestnut.ui.R;
@@ -34,8 +37,12 @@ public class ViewStubActivity extends AppCompatActivity {
             }
             TextView tvTitle = (TextView) findViewById(R.id.tv_title);
             tvTitle.setText("I'm inflate: " + System.currentTimeMillis());
-        });
 
+            ImageView img =  (ImageView) findViewById(R.id.img);
+            img.getDrawable().setLevel(5000);
+            Animation scaleAnimation = AnimationUtils.loadAnimation(this, R.anim.scale_anim);
+            img.startAnimation(scaleAnimation);
+        });
     }
 
     /**
